@@ -7,10 +7,10 @@ for the molecular geometries stored in the datasets of the WS22 database hosted 
 The script works in three steps:
 
 First, a built-in function is used to convert the Cartesian coordinates of the molecular geometries into 
-an atom-atom pairwise distance descriptor of size $$N_{atoms} * (N_{atoms} - 1)/2$$. Then, this descriptor 
-is scaled by using the MinMax approach. Finally, the rescaled data is passed as input to a PCA method that 
-is used to project the high-dimensional descriptor into a compact 2D representation for visualization 
-purposes.
+a pairwise distance descriptor of size $N_{atoms} * (N_{atoms} - 1)/2$ containing all unique atom-atom
+distances. Then, this descriptor is scaled by using the MinMax approach. Finally, the rescaled data is 
+passed as input to a PCA method that is used to project the high-dimensional descriptor into a compact 
+2D representation for visualization purposes.
 
 ## Requirements
 
