@@ -15,12 +15,14 @@ def r2_descriptor(xyz_matrix: np.ndarray) -> np.ndarray:
     """Build the pairwise atom-atom distance descriptor.
 
     Args:
-       xyz_matrix: a numpy 3D tensor of shape (n_geometries, n_atoms, 3) containing the stacked 
-                   Cartesian coordinates of the molecular structures.
+    -----
+        xyz_matrix: a numpy 3D tensor of shape (n_geometries, n_atoms, 3) containing the stacked 
+                    Cartesian coordinates of the molecular structures.
 
     Return:
-       r2_matrix: a numpy 2D array of shape (n_geometries, n_atoms * (n_atoms - 1)/2) with the
-                  unique pairwise distances vector calculated for each molecular geometry.
+    -------
+        r2_matrix: a numpy 2D array of shape (n_geometries, n_atoms * (n_atoms - 1)/2) with the
+                   unique pairwise distances vector calculated for each molecular geometry.
     """
     n_samples, n_atoms, _ = xyz_matrix.shape
     dist_vec_size = int(n_atoms * (n_atoms - 1)/2)
