@@ -24,7 +24,8 @@ To run this script, the following packages should be installed:
 
 ## How to use
 
-The script can be executed from the terminal as follows:
+After downloading the desired NPZ datasets from the ZENODO repository to a local directory, one can run 
+the script directly from a Linux terminal as follows:
 
 ```
 python dimred.py
